@@ -12,9 +12,8 @@ Date/Time – Departure Date, Arrival Date.
      Load the dataset and inspect the first few rows to understand structure.
      Check the number of rows and columns.
      Check the data types of each column (e.g., object, int, float, datetime).
-     Verify column names (remove leading or trailing spaces).
-
-   b. Removing Duplicates and Irrelevant Columns
+     
+ b. Removing Duplicates and Irrelevant Columns
     Remove duplicate rows to avoid redundancy.
     Drop irrelevant columns that do not contribute to analysis (like passenger ID, personal names, etc.).
     Keep only meaningful columns that relate to flight performance or passenger information.
