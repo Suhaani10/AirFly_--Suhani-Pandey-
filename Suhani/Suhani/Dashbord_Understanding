@@ -1,0 +1,102 @@
+DASHBOARD EXPLANATION:
+PAGE:1
+Aviation Performance Intelligence Dashboard — Detailed Explanation
+     This dashboard provides a comprehensive analysis of flight operations, including flight performance, airline behavior, delays, cancellations, fleet utilization,
+     and route patterns. It is designed to quickly reveal operational strengths and weaknesses within the aviation industry.
+
+Top KPI Cards
+    At the top, the dashboard displays three important performance indicators:
+    Total Flights (2M) – Total number of flights recorded in the dataset.
+    On-Time Flights (469K) – Flights that arrived on time, indicating successful and efficient operations.
+    Total Delayed Flights (1M) – Flights that arrived late, reflecting performance challenges and customer impact.
+
+Number of Flights by Airline and Aircraft Type
+     This stacked bar chart compares the total number of flights operated by each airline while highlighting which aircraft types they predominantly use, such as 
+     Airbus A320, Boeing 737, and Boeing 777.
+     This helps us understand:
+        Which airlines operate the largest fleets.
+        Aircraft allocation across airlines.
+        Whether an airline is more domestic or international based on aircraft type.
+
+Number of Flights by Origin and Destination
+     A Sankey chart visualizes flight flow between major airport hubs. Left blocks represent the origin airports, and right blocks represent the destinations, 
+     with connecting lines showing flight frequency.
+      Thicker lines indicate busier routes. This helps identify:
+      Major hub airports.
+      Highest traffic connections.
+      Route demand and network strength.
+
+Number of Flights by Hour Bucket
+      This bar chart shows how many flights operate during different time windows of the day:
+      Morning (most operational activity)
+      Afternoon and Evening (steady traffic)
+      Night (low traffic)
+
+Number of Flights by Flight Status and Airline
+      Another donut chart splits flights into two categories: On-Time and Delayed, and shows this breakdown separately for each airline.
+      This helps us determine:
+      Which airlines have better punctuality.
+      Operational efficiency in managing schedules and turnaround.
+
+Interactive Filters
+      Slicers for Origin Airport, Destination Airport, Airline, Aircraft Type, and Diverted status allow a user to dive deeper into the data. 
+      These filters make the dashboard dynamic and allow targeted analysis such as:
+      Analyzing route performance
+      Comparing punctuality across different aircraft
+      Checking if flight diversion affects cancellation patterns
+
+PAGE:2
+
+Average of DelayMinutes by HourBucket
+      This line chart shows the average delay duration across different times of the day:
+      Morning (5 AM–12 PM)
+      Night (9 PM–5 AM)
+      Afternoon (12 PM–5 PM)
+      Evening (5 PM–9 PM)
+      The line trend helps understand when delays are longest.
+      From the displayed pattern:
+      Morning has the highest average delay
+      Evening shows the lowest average delay
+
+AvgDelay_ByDistanceCategory and Airline
+     This stacked bar chart compares average delay time based on:
+          Distance Category (Short Haul, Medium Haul, Long Haul)
+          Airline
+     It explains:
+          Whether delays increase with flight distance
+          If certain airlines struggle more with delays on specific routes
+     For example:
+          If long-haul flights show greater delay average → international connectivity issues.
+          If one airline’s bars are consistently higher → that airline has performance challenges.
+
+No. of Flight by HourBucket and FlightStatus
+     This clustered column chart shows number of flights in each time bucket, separated into:
+         On-time flights
+         Delayed flights
+      It reveals two patterns:
+         When more flights are operated
+         When more delays occur
+     Example from the graph:
+         Night and morning hours have more delayed flights
+         Evening has the least flight traffic and delays
+
+Cancelled Flights by DistanceCategory and DelayReason
+     This donut chart displays flight cancellations split by different distance categories and delay reasons.
+     It answers:
+         Which distance category is more likely to have cancellations?
+        What delay reasons lead to cancellation?
+     Sectors shown include:
+        Weather delays
+        Technical issues
+        Security reasons
+        Crew/Operational problems
+    The chart allows the viewer to:
+        Identify most problematic flight types (short/medium/long haul)
+        See which reason contributes most to cancellations
+
+At the top of the dashboard, there are several KPI cards:
+    Total Flight – Shows the total number of flights analyzed.
+    On-Time Flights – Shows how many flights reached their destination within the scheduled time.
+    Cancelled Flights – Indicates the number of flights that were cancelled.
+    Delayed Flights – Displays how many flights experienced delays.
+    Delayed & Cancelled Flights – Shows flights that were both delayed and eventually cancelled (double impact).
